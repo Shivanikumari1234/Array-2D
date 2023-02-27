@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class A79 {
+    public static void main(String[] args) {
+        int n, m;
+        Scanner r = new Scanner(System.in);
+        System.out.print("Enter the no. of Rows in array");
+        n = r.nextInt();
+        System.out.print("Enter the no. of colomn in array");
+        m = r.nextInt();
+        int a[][] = new int[n][m];
+        System.out.print("Enter value in matrix");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                a[i][j] = r.nextInt();
+            }
+        }
+        System.out.println(" matrix :");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.print(" \n");
+        }
+
+    }
+}
